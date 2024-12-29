@@ -6,58 +6,64 @@
 }
     
     
-
-#logo{
-    margin-left: 50px;
-    margin-top: 50px;
-    
-}
-
-#titulo-menusuperior {
-    margin-left: 150px;
-    margin-top: 50px;
-}
-#texto-menusuperior{
-    margin-left: 150px;
-    margin-top: 35px;
-    padding-bottom: 100PX;
-}
-
-#menusuperiro{
-    
-    background-image: url(imagens/fundo-superior.svg);
+#menusuperiro {
+    background-color: #303030; /* Cor de fundo */
     color: white;
-
+    padding: 0; /* Remover padding interno */
+    margin: 0; /* Remover margens externas */
+    width: 100%; /* Garantir que ocupe toda a largura */
+    box-sizing: border-box; /* Garantir que padding e margens sejam controlados */
 }
+
+ 
+
+
+/* Título do menu superior */
+#titulo-menusuperior {
+    margin-left: 50px;
+    margin-top: 0; /* Remover margem superior */
+    padding: 60px 0  10px; /* Ajuste do padding para dar algum espaço ao redor do texto */
+}
+
+/* Texto do menu superior */
+#texto-menusuperior {
+    margin-left: 50px;
+    margin-top: 5px; /* Ajuste do topo do texto */
+    padding-bottom: 60px; /* Ajuste o padding inferior, se necessário */
+    font-size: 10px;
+}
+
+
+
 #menuinformacional{
-   background-color: #EAECE5;
-   display: grid;
-   grid-auto-flow: column;
-   columns: auto;
-   
-   
+    background-color: #FFFF;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 20px; /* Espaçamento entre os itens */
+    justify-content: center; /* Centraliza o conteúdo */
+    padding: 30px 0;
 }
 
-.icone{
-  margin:50px 0 50px 100px ;
-  padding: 25px;
-}
 .informativo{
-    margin:50px 50 50px 75px ;
-    display: flex;
-    align-items: center;
+    padding: 90px 0 30px 90px ;
+    margin:70px 50 50px 75px ;
+    
+    
 }
 
 
 #secaovideo{
-    display: grid;
-    grid-auto-flow: column;
-    columns: auto;
+    display: flex; /* Usando flexbox para organizar os elementos */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: space-between; /* Espaça o texto e a imagem */
+    padding: 50px
 }
     
 #textovideo{
- display: flex;
- align-items: center;
+    flex: 1; /* Ocupa metade do espaço */
+    margin-right: 20px; /* Espaçamento entre texto e imagem */
+
+ 
 }
 
 #titulovideo{
@@ -65,8 +71,11 @@ color: #2476A0;
 margin-top: 50px;
 }
 
-#video{
-    margin: 50px  25px 50px 75px;
+#video img{
+    #video img {
+        flex: 1; /* Ocupa metade do espaço */
+        max-width: 100%;
+        height: auto;
 }
 
 #carrossel{
